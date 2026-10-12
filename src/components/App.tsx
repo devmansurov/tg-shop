@@ -8,7 +8,8 @@ import { CartProvider } from '@/store/cart.tsx';
 function ScrollToTop() {
   const { pathname } = useLocation();
   useEffect(() => {
-    if (pathname !== '/') window.scrollTo(0, 0);
+    // lists restore their own scroll position
+    if (pathname !== '/' && pathname !== '/list') window.scrollTo(0, 0);
   }, [pathname]);
   return null;
 }

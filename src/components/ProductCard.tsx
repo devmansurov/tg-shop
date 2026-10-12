@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-import { formatPrice, formatSold, type Product, shortTitle } from '@/data/catalog.ts';
+import { formatPrice, formatSold, hasPriceRange, type Product, shortTitle } from '@/data/catalog.ts';
 import { publicUrl } from '@/helpers/publicUrl.ts';
 
 export function ProductCard({ product: p }: { product: Product }) {
@@ -11,6 +11,7 @@ export function ProductCard({ product: p }: { product: Product }) {
       </div>
       <div className="card-title">{p.brand && <b>{p.brand} </b>}{shortTitle(p)}</div>
       <div className="card-price">
+        {hasPriceRange(p) && <span className="from">от</span>}
         <span className="price">{formatPrice(p.price)}</span>
         {p.oldPrice && <s>{formatPrice(p.oldPrice)}</s>}
       </div>

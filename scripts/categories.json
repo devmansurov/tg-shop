@@ -1,0 +1,18 @@
+[
+  {"slug": "shoes", "title": "Обувь", "parent": null},
+  {"slug": "running", "title": "Беговые", "parent": "shoes", "weight": "shoes"},
+  {"slug": "basketball", "title": "Баскетбольные", "parent": "shoes", "weight": "shoes"},
+  {"slug": "sneakers", "title": "Кеды и повседневные", "parent": "shoes", "weight": "shoes"},
+  {"slug": "football", "title": "Футбольные бутсы", "parent": "shoes", "weight": "shoes"},
+  {"slug": "training", "title": "Для тренировок", "parent": "shoes", "weight": "shoes"},
+  {"slug": "outdoor", "title": "Зимние и треккинговые", "parent": "shoes", "weight": "shoes"},
+  {"slug": "slides", "title": "Шлёпанцы", "parent": "shoes", "weight": "slippers"},
+  {"slug": "clothes", "title": "Одежда", "parent": null},
+  {"slug": "hoodies", "title": "Худи и свитшоты", "parent": "clothes", "weight": "hoodies"},
+  {"slug": "jackets", "title": "Куртки и ветровки", "parent": "clothes", "weight": "jackets"},
+  {"slug": "down", "title": "Пуховики", "parent": "clothes", "weight": "down"},
+  {"slug": "pants", "title": "Брюки", "parent": "clothes", "weight": "pants"},
+  {"slug": "suits", "title": "Спортивные костюмы", "parent": "clothes", "weight": "suits"},
+  {"slug": "tshirts", "title": "Футболки и поло", "parent": "clothes", "weight": "tshirts"},
+  {"slug": "shorts", "title": "Шорты", "parent": "clothes", "weight": "shorts"}
+]

@@ -28,3 +28,6 @@ dist-ssr
 # bot token
 .env.bot
 .env.tg
+
+# purchase prices, margin and raw Dewu data stay local
+private/

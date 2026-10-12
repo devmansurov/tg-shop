@@ -1,1436 +1,2067 @@
 {
+ "delivery": [
+  {
+   "key": "regular",
+   "title": "Обычная",
+   "days": "15–25 дней"
+  },
+  {
+   "key": "express",
+   "title": "Экспресс",
+   "days": "7–12 дней"
+  }
+ ],
  "categories": [
   {
-   "slug": "mens-shoes",
-   "title": "Мужская обувь"
+   "slug": "shoes",
+   "title": "Обувь",
+   "parent": null
   },
   {
-   "slug": "womens-shoes",
-   "title": "Женская обувь"
+   "slug": "running",
+   "title": "Беговые",
+   "parent": "shoes"
   },
   {
-   "slug": "mens-shirts",
-   "title": "Мужская одежда"
+   "slug": "sneakers",
+   "title": "Кеды и повседневные",
+   "parent": "shoes"
   },
   {
-   "slug": "tops",
-   "title": "Женская одежда"
+   "slug": "training",
+   "title": "Для тренировок",
+   "parent": "shoes"
   },
   {
-   "slug": "womens-dresses",
-   "title": "Платья"
+   "slug": "clothes",
+   "title": "Одежда",
+   "parent": null
   },
   {
-   "slug": "womens-bags",
-   "title": "Сумки"
+   "slug": "hoodies",
+   "title": "Худи и свитшоты",
+   "parent": "clothes"
   },
   {
-   "slug": "mens-watches",
-   "title": "Мужские часы"
+   "slug": "suits",
+   "title": "Спортивные костюмы",
+   "parent": "clothes"
   },
   {
-   "slug": "womens-watches",
-   "title": "Женские часы"
-  },
-  {
-   "slug": "sunglasses",
-   "title": "Очки"
-  },
-  {
-   "slug": "womens-jewellery",
-   "title": "Украшения"
-  },
-  {
-   "slug": "fragrances",
-   "title": "Парфюм"
-  },
-  {
-   "slug": "sports-accessories",
-   "title": "Спорт"
+   "slug": "tshirts",
+   "title": "Футболки и поло",
+   "parent": "clothes"
   }
  ],
  "products": [
   {
    "id": 88,
-   "title": "Nike Air Jordan 1 Red And Black",
    "brand": "Nike",
-   "category": "mens-shoes",
-   "description": "The Nike Air Jordan 1 in Red and Black is an iconic basketball sneaker known for its stylish design and high-performance features, making it a favorite among sneaker enthusiasts and athletes.",
-   "price": 1065,
+   "category": "sneakers",
+   "title": "Nike Air Jordan 1 Red And Black",
+   "gender": "men",
+   "price": 1810,
    "oldPrice": null,
-   "rating": 4.77,
+   "expressExtra": 60,
    "sold": 1227,
    "sizes": [
-    "39",
-    "40",
-    "40.5",
-    "41",
-    "42",
-    "42.5",
-    "43",
-    "44",
-    "45"
+    {
+     "size": "39",
+     "price": 1810
+    },
+    {
+     "size": "40",
+     "price": 1840
+    },
+    {
+     "size": "40.5",
+     "price": 1875
+    },
+    {
+     "size": "41",
+     "price": 1810
+    },
+    {
+     "size": "42",
+     "price": 1840
+    },
+    {
+     "size": "42.5",
+     "price": 1875
+    },
+    {
+     "size": "43",
+     "price": 1810
+    },
+    {
+     "size": "44",
+     "price": 1840
+    },
+    {
+     "size": "45",
+     "price": 1875
+    }
    ],
    "photos": [
     "img/88-0.jpg",
     "img/88-1.jpg",
     "img/88-2.jpg"
-   ]
+   ],
+   "article": "DEMO-88"
   },
   {
    "id": 89,
-   "title": "Nike Baseball Cleats",
    "brand": "Nike",
-   "category": "mens-shoes",
-   "description": "Nike Baseball Cleats are designed for maximum traction and performance on the baseball field. They provide stability and support for players during games and practices.",
-   "price": 568,
-   "oldPrice": 693,
-   "rating": 3.88,
+   "category": "sneakers",
+   "title": "Nike Baseball Cleats",
+   "gender": "men",
+   "price": 1000,
+   "oldPrice": 1200,
+   "expressExtra": 60,
    "sold": 1423,
    "sizes": [
-    "39",
-    "40",
-    "40.5",
-    "41",
-    "42",
-    "42.5",
-    "43",
-    "44",
-    "45"
+    {
+     "size": "39",
+     "price": 1000
+    },
+    {
+     "size": "40",
+     "price": 1030
+    },
+    {
+     "size": "40.5",
+     "price": 1065
+    },
+    {
+     "size": "41",
+     "price": 1000
+    },
+    {
+     "size": "42",
+     "price": 1030
+    },
+    {
+     "size": "42.5",
+     "price": 1065
+    },
+    {
+     "size": "43",
+     "price": 1000
+    },
+    {
+     "size": "44",
+     "price": 1030
+    },
+    {
+     "size": "45",
+     "price": 1065
+    }
    ],
    "photos": [
     "img/89-0.jpg",
     "img/89-1.jpg",
     "img/89-2.jpg"
-   ]
+   ],
+   "article": "DEMO-89"
   },
   {
    "id": 90,
-   "title": "Puma Future Rider Trainers",
    "brand": "Puma",
-   "category": "mens-shoes",
-   "description": "The Puma Future Rider Trainers offer a blend of retro style and modern comfort. Perfect for casual wear, these trainers provide a fashionable and comfortable option for everyday use.",
-   "price": 639,
+   "category": "sneakers",
+   "title": "Puma Future Rider Trainers",
+   "gender": "men",
+   "price": 1115,
    "oldPrice": null,
-   "rating": 4.9,
+   "expressExtra": 60,
    "sold": 4320,
    "sizes": [
-    "39",
-    "40",
-    "40.5",
-    "41",
-    "42",
-    "42.5",
-    "43",
-    "44",
-    "45"
+    {
+     "size": "39",
+     "price": 1115
+    },
+    {
+     "size": "40",
+     "price": 1145
+    },
+    {
+     "size": "40.5",
+     "price": 1180
+    },
+    {
+     "size": "41",
+     "price": 1115
+    },
+    {
+     "size": "42",
+     "price": 1145
+    },
+    {
+     "size": "42.5",
+     "price": 1180
+    },
+    {
+     "size": "43",
+     "price": 1115
+    },
+    {
+     "size": "44",
+     "price": 1145
+    },
+    {
+     "size": "45",
+     "price": 1180
+    }
    ],
    "photos": [
     "img/90-0.jpg",
     "img/90-1.jpg",
     "img/90-2.jpg"
-   ]
+   ],
+   "article": "DEMO-90"
   },
   {
    "id": 91,
-   "title": "Sports Sneakers Off White & Red",
    "brand": "Off White",
-   "category": "mens-shoes",
-   "description": "The Sports Sneakers in Off White and Red combine style and functionality, making them a fashionable choice for sports enthusiasts. The red and off-white color combination adds a bold and energetic touch.",
-   "price": 852,
+   "category": "sneakers",
+   "title": "Sports Sneakers Off White & Red",
+   "gender": "men",
+   "price": 1460,
    "oldPrice": null,
-   "rating": 4.77,
+   "expressExtra": 60,
    "sold": 1630,
    "sizes": [
-    "39",
-    "40",
-    "40.5",
-    "41",
-    "42",
-    "42.5",
-    "43",
-    "44",
-    "45"
+    {
+     "size": "39",
+     "price": 1460
+    },
+    {
+     "size": "40",
+     "price": 1495
+    },
+    {
+     "size": "40.5",
+     "price": 1525
+    },
+    {
+     "size": "41",
+     "price": 1460
+    },
+    {
+     "size": "42",
+     "price": 1495
+    },
+    {
+     "size": "42.5",
+     "price": 1525
+    },
+    {
+     "size": "43",
+     "price": 1460
+    },
+    {
+     "size": "44",
+     "price": 1495
+    },
+    {
+     "size": "45",
+     "price": 1525
+    }
    ],
    "photos": [
     "img/91-0.jpg",
     "img/91-1.jpg",
     "img/91-2.jpg"
-   ]
+   ],
+   "article": "DEMO-91"
   },
   {
    "id": 92,
-   "title": "Sports Sneakers Off White Red",
    "brand": "Off White",
-   "category": "mens-shoes",
-   "description": "Another variant of the Sports Sneakers in Off White Red, featuring a unique design. These sneakers offer style and comfort for casual occasions.",
-   "price": 781,
+   "category": "sneakers",
+   "title": "Sports Sneakers Off White Red",
+   "gender": "men",
+   "price": 1345,
    "oldPrice": null,
-   "rating": 4.69,
+   "expressExtra": 60,
    "sold": 3306,
    "sizes": [
-    "39",
-    "40",
-    "40.5",
-    "41",
-    "42",
-    "42.5",
-    "43",
-    "44",
-    "45"
+    {
+     "size": "39",
+     "price": 1345
+    },
+    {
+     "size": "40",
+     "price": 1380
+    },
+    {
+     "size": "40.5",
+     "price": 1410
+    },
+    {
+     "size": "41",
+     "price": 1345
+    },
+    {
+     "size": "42",
+     "price": 1380
+    },
+    {
+     "size": "42.5",
+     "price": 1410
+    },
+    {
+     "size": "43",
+     "price": 1345
+    },
+    {
+     "size": "44",
+     "price": 1380
+    },
+    {
+     "size": "45",
+     "price": 1410
+    }
    ],
    "photos": [
     "img/92-0.jpg",
     "img/92-1.jpg",
     "img/92-2.jpg"
-   ]
+   ],
+   "article": "DEMO-92"
   },
   {
    "id": 185,
-   "title": "Black & Brown Slipper",
    "brand": "Comfort Trends",
-   "category": "womens-shoes",
-   "description": "The Black & Brown Slipper is a comfortable and stylish choice for casual wear. Featuring a blend of black and brown colors, it adds a touch of sophistication to your relaxation.",
-   "price": 142,
+   "category": "running",
+   "title": "Black & Brown Slipper",
+   "gender": "women",
+   "price": 305,
    "oldPrice": null,
-   "rating": 2.53,
+   "expressExtra": 60,
    "sold": 2146,
    "sizes": [
-    "39",
-    "40",
-    "40.5",
-    "41",
-    "42",
-    "42.5",
-    "43",
-    "44",
-    "45"
+    {
+     "size": "39",
+     "price": 305
+    },
+    {
+     "size": "40",
+     "price": 335
+    },
+    {
+     "size": "40.5",
+     "price": 370
+    },
+    {
+     "size": "41",
+     "price": 305
+    },
+    {
+     "size": "42",
+     "price": 335
+    },
+    {
+     "size": "42.5",
+     "price": 370
+    },
+    {
+     "size": "43",
+     "price": 305
+    },
+    {
+     "size": "44",
+     "price": 335
+    },
+    {
+     "size": "45",
+     "price": 370
+    }
    ],
    "photos": [
     "img/185-0.jpg",
     "img/185-1.jpg",
     "img/185-2.jpg"
-   ]
+   ],
+   "article": "DEMO-185"
   },
   {
    "id": 186,
-   "title": "Calvin Klein Heel Shoes",
    "brand": "Calvin Klein",
-   "category": "womens-shoes",
-   "description": "Calvin Klein Heel Shoes are elegant and sophisticated, designed for formal occasions. With a classic design and high-quality materials, they complement your stylish ensemble.",
-   "price": 568,
+   "category": "running",
+   "title": "Calvin Klein Heel Shoes",
+   "gender": "women",
+   "price": 1000,
    "oldPrice": null,
-   "rating": 4.92,
+   "expressExtra": 60,
    "sold": 5487,
    "sizes": [
-    "39",
-    "40",
-    "40.5",
-    "41",
-    "42",
-    "42.5",
-    "43",
-    "44",
-    "45"
+    {
+     "size": "39",
+     "price": 1000
+    },
+    {
+     "size": "40",
+     "price": 1030
+    },
+    {
+     "size": "40.5",
+     "price": 1065
+    },
+    {
+     "size": "41",
+     "price": 1000
+    },
+    {
+     "size": "42",
+     "price": 1030
+    },
+    {
+     "size": "42.5",
+     "price": 1065
+    },
+    {
+     "size": "43",
+     "price": 1000
+    },
+    {
+     "size": "44",
+     "price": 1030
+    },
+    {
+     "size": "45",
+     "price": 1065
+    }
    ],
    "photos": [
     "img/186-0.jpg",
     "img/186-1.jpg",
     "img/186-2.jpg"
-   ]
+   ],
+   "article": "DEMO-186"
   },
   {
    "id": 187,
-   "title": "Golden Shoes Woman",
    "brand": "Fashion Diva",
-   "category": "womens-shoes",
-   "description": "The Golden Shoes for Women are a glamorous choice for special occasions. Featuring a golden hue and stylish design, they add a touch of luxury to your outfit.",
-   "price": 355,
-   "oldPrice": 412,
-   "rating": 3.26,
+   "category": "running",
+   "title": "Golden Shoes Woman",
+   "gender": "women",
+   "price": 650,
+   "oldPrice": 745,
+   "expressExtra": 60,
    "sold": 5313,
    "sizes": [
-    "39",
-    "40",
-    "40.5",
-    "41",
-    "42",
-    "42.5",
-    "43",
-    "44",
-    "45"
+    {
+     "size": "39",
+     "price": 650
+    },
+    {
+     "size": "40",
+     "price": 685
+    },
+    {
+     "size": "40.5",
+     "price": 715
+    },
+    {
+     "size": "41",
+     "price": 650
+    },
+    {
+     "size": "42",
+     "price": 685
+    },
+    {
+     "size": "42.5",
+     "price": 715
+    },
+    {
+     "size": "43",
+     "price": 650
+    },
+    {
+     "size": "44",
+     "price": 685
+    },
+    {
+     "size": "45",
+     "price": 715
+    }
    ],
    "photos": [
     "img/187-0.jpg",
     "img/187-1.jpg",
     "img/187-2.jpg"
-   ]
+   ],
+   "article": "DEMO-187"
   },
   {
    "id": 188,
-   "title": "Pampi Shoes",
    "brand": "Pampi",
-   "category": "womens-shoes",
-   "description": "Pampi Shoes offer a blend of comfort and style for everyday use. With a versatile design, they are suitable for various casual occasions, providing a trendy and relaxed look.",
-   "price": 213,
-   "oldPrice": 248,
-   "rating": 3.05,
+   "category": "running",
+   "title": "Pampi Shoes",
+   "gender": "women",
+   "price": 420,
+   "oldPrice": 475,
+   "expressExtra": 60,
    "sold": 3881,
    "sizes": [
-    "39",
-    "40",
-    "40.5",
-    "41",
-    "42",
-    "42.5",
-    "43",
-    "44",
-    "45"
+    {
+     "size": "39",
+     "price": 420
+    },
+    {
+     "size": "40",
+     "price": 450
+    },
+    {
+     "size": "40.5",
+     "price": 485
+    },
+    {
+     "size": "41",
+     "price": 420
+    },
+    {
+     "size": "42",
+     "price": 450
+    },
+    {
+     "size": "42.5",
+     "price": 485
+    },
+    {
+     "size": "43",
+     "price": 420
+    },
+    {
+     "size": "44",
+     "price": 450
+    },
+    {
+     "size": "45",
+     "price": 485
+    }
    ],
    "photos": [
     "img/188-0.jpg",
     "img/188-1.jpg",
     "img/188-2.jpg"
-   ]
+   ],
+   "article": "DEMO-188"
   },
   {
    "id": 189,
-   "title": "Red Shoes",
    "brand": "Fashion Express",
-   "category": "womens-shoes",
-   "description": "The Red Shoes make a bold statement with their vibrant red color. Whether for a party or a casual outing, these shoes add a pop of color and style to your wardrobe.",
-   "price": 248,
-   "oldPrice": 301,
-   "rating": 3.25,
+   "category": "running",
+   "title": "Red Shoes",
+   "gender": "women",
+   "price": 475,
+   "oldPrice": 560,
+   "expressExtra": 60,
    "sold": 2338,
    "sizes": [
-    "39",
-    "40",
-    "40.5",
-    "41",
-    "42",
-    "42.5",
-    "43",
-    "44",
-    "45"
+    {
+     "size": "39",
+     "price": 475
+    },
+    {
+     "size": "40",
+     "price": 510
+    },
+    {
+     "size": "40.5",
+     "price": 540
+    },
+    {
+     "size": "41",
+     "price": 475
+    },
+    {
+     "size": "42",
+     "price": 510
+    },
+    {
+     "size": "42.5",
+     "price": 540
+    },
+    {
+     "size": "43",
+     "price": 475
+    },
+    {
+     "size": "44",
+     "price": 510
+    },
+    {
+     "size": "45",
+     "price": 540
+    }
    ],
    "photos": [
     "img/189-0.jpg",
     "img/189-1.jpg",
     "img/189-2.jpg"
-   ]
+   ],
+   "article": "DEMO-189"
   },
   {
    "id": 83,
-   "title": "Blue & Black Check Shirt",
    "brand": "Fashion Trends",
-   "category": "mens-shirts",
-   "description": "The Blue & Black Check Shirt is a stylish and comfortable men's shirt featuring a classic check pattern. Made from high-quality fabric, it's suitable for both casual and semi-formal occasions.",
-   "price": 213,
-   "oldPrice": 252,
-   "rating": 3.64,
+   "category": "tshirts",
+   "title": "Blue & Black Check Shirt",
+   "gender": "men",
+   "price": 365,
+   "oldPrice": 430,
+   "expressExtra": 15,
    "sold": 2319,
    "sizes": [
-    "XS",
-    "S",
-    "M",
-    "L",
-    "XL",
-    "XXL"
+    {
+     "size": "XS",
+     "price": 365
+    },
+    {
+     "size": "S",
+     "price": 400
+    },
+    {
+     "size": "M",
+     "price": 430
+    },
+    {
+     "size": "L",
+     "price": 365
+    },
+    {
+     "size": "XL",
+     "price": 400
+    },
+    {
+     "size": "XXL",
+     "price": 430
+    }
    ],
    "photos": [
     "img/83-0.jpg",
     "img/83-1.jpg",
     "img/83-2.jpg"
-   ]
+   ],
+   "article": "DEMO-83"
   },
   {
    "id": 84,
-   "title": "Gigabyte Aorus Men Tshirt",
    "brand": "Gigabyte",
-   "category": "mens-shirts",
-   "description": "The Gigabyte Aorus Men Tshirt is a cool and casual shirt for gaming enthusiasts. With the Aorus logo and sleek design, it's perfect for expressing your gaming style.",
-   "price": 177,
+   "category": "tshirts",
+   "title": "Gigabyte Aorus Men Tshirt",
+   "gender": "men",
+   "price": 305,
    "oldPrice": null,
-   "rating": 3.18,
+   "expressExtra": 15,
    "sold": 4254,
    "sizes": [
-    "XS",
-    "S",
-    "M",
-    "L",
-    "XL",
-    "XXL"
+    {
+     "size": "XS",
+     "price": 305
+    },
+    {
+     "size": "S",
+     "price": 340
+    },
+    {
+     "size": "M",
+     "price": 370
+    },
+    {
+     "size": "L",
+     "price": 305
+    },
+    {
+     "size": "XL",
+     "price": 340
+    },
+    {
+     "size": "XXL",
+     "price": 370
+    }
    ],
    "photos": [
     "img/84-0.jpg",
     "img/84-1.jpg",
     "img/84-2.jpg"
-   ]
+   ],
+   "article": "DEMO-84"
   },
   {
    "id": 85,
-   "title": "Man Plaid Shirt",
    "brand": "Classic Wear",
-   "category": "mens-shirts",
-   "description": "The Man Plaid Shirt is a timeless and versatile men's shirt with a classic plaid pattern. Its comfortable fit and casual style make it a wardrobe essential for various occasions.",
-   "price": 248,
-   "oldPrice": 308,
-   "rating": 3.46,
+   "category": "tshirts",
+   "title": "Man Plaid Shirt",
+   "gender": "men",
+   "price": 425,
+   "oldPrice": 520,
+   "expressExtra": 15,
    "sold": 3969,
    "sizes": [
-    "XS",
-    "S",
-    "M",
-    "L",
-    "XL",
-    "XXL"
+    {
+     "size": "XS",
+     "price": 425
+    },
+    {
+     "size": "S",
+     "price": 455
+    },
+    {
+     "size": "M",
+     "price": 490
+    },
+    {
+     "size": "L",
+     "price": 425
+    },
+    {
+     "size": "XL",
+     "price": 455
+    },
+    {
+     "size": "XXL",
+     "price": 490
+    }
    ],
    "photos": [
     "img/85-0.jpg",
     "img/85-1.jpg",
     "img/85-2.jpg"
-   ]
+   ],
+   "article": "DEMO-85"
   },
   {
    "id": 86,
-   "title": "Man Short Sleeve Shirt",
    "brand": "Casual Comfort",
-   "category": "mens-shirts",
-   "description": "The Man Short Sleeve Shirt is a breezy and stylish option for warm days. With a comfortable fit and short sleeves, it's perfect for a laid-back yet polished look.",
-   "price": 142,
-   "oldPrice": 152,
-   "rating": 2.9,
+   "category": "tshirts",
+   "title": "Man Short Sleeve Shirt",
+   "gender": "men",
+   "price": 250,
+   "oldPrice": 265,
+   "expressExtra": 15,
    "sold": 1020,
    "sizes": [
-    "XS",
-    "S",
-    "M",
-    "L",
-    "XL",
-    "XXL"
+    {
+     "size": "XS",
+     "price": 250
+    },
+    {
+     "size": "S",
+     "price": 285
+    },
+    {
+     "size": "M",
+     "price": 315
+    },
+    {
+     "size": "L",
+     "price": 250
+    },
+    {
+     "size": "XL",
+     "price": 285
+    },
+    {
+     "size": "XXL",
+     "price": 315
+    }
    ],
    "photos": [
     "img/86-0.jpg",
     "img/86-1.jpg",
     "img/86-2.jpg"
-   ]
+   ],
+   "article": "DEMO-86"
   },
   {
    "id": 87,
-   "title": "Men Check Shirt",
    "brand": "Urban Chic",
-   "category": "mens-shirts",
-   "description": "The Men Check Shirt is a classic and versatile shirt featuring a stylish check pattern. Suitable for various occasions, it adds a smart and polished touch to your wardrobe.",
-   "price": 199,
-   "oldPrice": 225,
-   "rating": 2.72,
+   "category": "tshirts",
+   "title": "Men Check Shirt",
+   "gender": "men",
+   "price": 345,
+   "oldPrice": 385,
+   "expressExtra": 15,
    "sold": 4472,
    "sizes": [
-    "XS",
-    "S",
-    "M",
-    "L",
-    "XL",
-    "XXL"
+    {
+     "size": "XS",
+     "price": 345
+    },
+    {
+     "size": "S",
+     "price": 375
+    },
+    {
+     "size": "M",
+     "price": 410
+    },
+    {
+     "size": "L",
+     "price": 345
+    },
+    {
+     "size": "XL",
+     "price": 375
+    },
+    {
+     "size": "XXL",
+     "price": 410
+    }
    ],
    "photos": [
     "img/87-0.jpg",
     "img/87-1.jpg",
     "img/87-2.jpg"
-   ]
+   ],
+   "article": "DEMO-87"
   },
   {
    "id": 162,
+   "brand": "Demo",
+   "category": "hoodies",
    "title": "Blue Frock",
-   "brand": "",
-   "category": "tops",
-   "description": "The Blue Frock is a charming and stylish dress for various occasions. With a vibrant blue color and a comfortable design, it adds a touch of elegance to your wardrobe.",
-   "price": 213,
-   "oldPrice": 242,
-   "rating": 4.17,
+   "gender": "women",
+   "price": 385,
+   "oldPrice": 435,
+   "expressExtra": 30,
    "sold": 3706,
    "sizes": [
-    "XS",
-    "S",
-    "M",
-    "L",
-    "XL",
-    "XXL"
+    {
+     "size": "XS",
+     "price": 385
+    },
+    {
+     "size": "S",
+     "price": 420
+    },
+    {
+     "size": "M",
+     "price": 450
+    },
+    {
+     "size": "L",
+     "price": 385
+    },
+    {
+     "size": "XL",
+     "price": 420
+    },
+    {
+     "size": "XXL",
+     "price": 450
+    }
    ],
    "photos": [
     "img/162-0.jpg",
     "img/162-1.jpg",
     "img/162-2.jpg"
-   ]
+   ],
+   "article": "DEMO-162"
   },
   {
    "id": 163,
+   "brand": "Demo",
+   "category": "hoodies",
    "title": "Girl Summer Dress",
-   "brand": "",
-   "category": "tops",
-   "description": "The Girl Summer Dress is a cute and breezy dress designed for warm weather. With playful patterns and lightweight fabric, it's perfect for keeping cool and stylish during the summer.",
-   "price": 142,
-   "oldPrice": 176,
-   "rating": 4.77,
+   "gender": "women",
+   "price": 270,
+   "oldPrice": 325,
+   "expressExtra": 30,
    "sold": 3384,
    "sizes": [
-    "XS",
-    "S",
-    "M",
-    "L",
-    "XL",
-    "XXL"
+    {
+     "size": "XS",
+     "price": 270
+    },
+    {
+     "size": "S",
+     "price": 305
+    },
+    {
+     "size": "M",
+     "price": 335
+    },
+    {
+     "size": "L",
+     "price": 270
+    },
+    {
+     "size": "XL",
+     "price": 305
+    },
+    {
+     "size": "XXL",
+     "price": 335
+    }
    ],
    "photos": [
     "img/163-0.jpg",
     "img/163-1.jpg",
     "img/163-2.jpg"
-   ]
+   ],
+   "article": "DEMO-163"
   },
   {
    "id": 164,
+   "brand": "Demo",
+   "category": "hoodies",
    "title": "Gray Dress",
-   "brand": "",
-   "category": "tops",
-   "description": "The Gray Dress is a versatile and chic option for various occasions. With a neutral gray color, it can be dressed up or down, making it a wardrobe staple for any fashion-forward individual.",
-   "price": 248,
-   "oldPrice": 289,
-   "rating": 2.72,
+   "gender": "women",
+   "price": 445,
+   "oldPrice": 510,
+   "expressExtra": 30,
    "sold": 3839,
    "sizes": [
-    "XS",
-    "S",
-    "M",
-    "L",
-    "XL",
-    "XXL"
+    {
+     "size": "XS",
+     "price": 445
+    },
+    {
+     "size": "S",
+     "price": 475
+    },
+    {
+     "size": "M",
+     "price": 510
+    },
+    {
+     "size": "L",
+     "price": 445
+    },
+    {
+     "size": "XL",
+     "price": 475
+    },
+    {
+     "size": "XXL",
+     "price": 510
+    }
    ],
    "photos": [
     "img/164-0.jpg",
     "img/164-1.jpg",
     "img/164-2.jpg"
-   ]
+   ],
+   "article": "DEMO-164"
   },
   {
    "id": 165,
+   "brand": "Demo",
+   "category": "hoodies",
    "title": "Short Frock",
-   "brand": "",
-   "category": "tops",
-   "description": "The Short Frock is a playful and trendy dress with a shorter length. Ideal for casual outings or special occasions, it combines style and comfort for a fashionable look.",
-   "price": 177,
-   "oldPrice": 205,
-   "rating": 3.23,
+   "gender": "women",
+   "price": 330,
+   "oldPrice": 375,
+   "expressExtra": 30,
    "sold": 2629,
    "sizes": [
-    "XS",
-    "S",
-    "M",
-    "L",
-    "XL",
-    "XXL"
+    {
+     "size": "XS",
+     "price": 330
+    },
+    {
+     "size": "S",
+     "price": 360
+    },
+    {
+     "size": "M",
+     "price": 395
+    },
+    {
+     "size": "L",
+     "price": 330
+    },
+    {
+     "size": "XL",
+     "price": 360
+    },
+    {
+     "size": "XXL",
+     "price": 395
+    }
    ],
    "photos": [
     "img/165-0.jpg",
     "img/165-1.jpg",
     "img/165-2.jpg"
-   ]
+   ],
+   "article": "DEMO-165"
   },
   {
    "id": 166,
+   "brand": "Demo",
+   "category": "hoodies",
    "title": "Tartan Dress",
-   "brand": "",
-   "category": "tops",
-   "description": "The Tartan Dress features a classic tartan pattern, bringing a timeless and sophisticated touch to your wardrobe. Perfect for fall and winter, it adds a hint of traditional charm.",
-   "price": 284,
-   "oldPrice": 326,
-   "rating": 4.05,
+   "gender": "women",
+   "price": 505,
+   "oldPrice": 570,
+   "expressExtra": 30,
    "sold": 4527,
    "sizes": [
-    "XS",
-    "S",
-    "M",
-    "L",
-    "XL",
-    "XXL"
+    {
+     "size": "XS",
+     "price": 505
+    },
+    {
+     "size": "S",
+     "price": 535
+    },
+    {
+     "size": "M",
+     "price": 570
+    },
+    {
+     "size": "L",
+     "price": 505
+    },
+    {
+     "size": "XL",
+     "price": 535
+    },
+    {
+     "size": "XXL",
+     "price": 570
+    }
    ],
    "photos": [
     "img/166-0.jpg",
     "img/166-1.jpg",
     "img/166-2.jpg"
-   ]
+   ],
+   "article": "DEMO-166"
   },
   {
    "id": 177,
+   "brand": "Demo",
+   "category": "suits",
    "title": "Black Women's Gown",
-   "brand": "",
-   "category": "womens-dresses",
-   "description": "The Black Women's Gown is an elegant and timeless evening gown. With a sleek black design, it's perfect for formal events and special occasions, exuding sophistication and style.",
-   "price": 923,
-   "oldPrice": 1031,
-   "rating": 3.64,
+   "gender": "women",
+   "price": 1565,
+   "oldPrice": 1740,
+   "expressExtra": 50,
    "sold": 2872,
    "sizes": [
-    "XS",
-    "S",
-    "M",
-    "L",
-    "XL",
-    "XXL"
+    {
+     "size": "XS",
+     "price": 1565
+    },
+    {
+     "size": "S",
+     "price": 1600
+    },
+    {
+     "size": "M",
+     "price": 1630
+    },
+    {
+     "size": "L",
+     "price": 1565
+    },
+    {
+     "size": "XL",
+     "price": 1600
+    },
+    {
+     "size": "XXL",
+     "price": 1630
+    }
    ],
    "photos": [
     "img/177-0.jpg",
     "img/177-1.jpg",
     "img/177-2.jpg"
-   ]
+   ],
+   "article": "DEMO-177"
   },
   {
    "id": 178,
+   "brand": "Demo",
+   "category": "suits",
    "title": "Corset Leather With Skirt",
-   "brand": "",
-   "category": "womens-dresses",
-   "description": "The Corset Leather With Skirt is a bold and edgy ensemble that combines a stylish corset with a matching skirt. Ideal for fashion-forward individuals, it makes a statement at any event.",
-   "price": 639,
-   "oldPrice": 763,
-   "rating": 3.05,
+   "gender": "women",
+   "price": 1105,
+   "oldPrice": 1305,
+   "expressExtra": 50,
    "sold": 3068,
    "sizes": [
-    "XS",
-    "S",
-    "M",
-    "L",
-    "XL",
-    "XXL"
+    {
+     "size": "XS",
+     "price": 1105
+    },
+    {
+     "size": "S",
+     "price": 1135
+    },
+    {
+     "size": "M",
+     "price": 1170
+    },
+    {
+     "size": "L",
+     "price": 1105
+    },
+    {
+     "size": "XL",
+     "price": 1135
+    },
+    {
+     "size": "XXL",
+     "price": 1170
+    }
    ],
    "photos": [
     "img/178-0.jpg",
     "img/178-1.jpg",
     "img/178-2.jpg"
-   ]
+   ],
+   "article": "DEMO-178"
   },
   {
    "id": 179,
+   "brand": "Demo",
+   "category": "suits",
    "title": "Corset With Black Skirt",
-   "brand": "",
-   "category": "womens-dresses",
-   "description": "The Corset With Black Skirt is a chic and versatile outfit that pairs a fashionable corset with a classic black skirt. It offers a trendy and coordinated look for various occasions.",
-   "price": 568,
-   "oldPrice": 669,
-   "rating": 4.52,
+   "gender": "women",
+   "price": 985,
+   "oldPrice": 1150,
+   "expressExtra": 50,
    "sold": 3190,
    "sizes": [
-    "XS",
-    "S",
-    "M",
-    "L",
-    "XL",
-    "XXL"
+    {
+     "size": "XS",
+     "price": 985
+    },
+    {
+     "size": "S",
+     "price": 1020
+    },
+    {
+     "size": "M",
+     "price": 1050
+    },
+    {
+     "size": "L",
+     "price": 985
+    },
+    {
+     "size": "XL",
+     "price": 1020
+    },
+    {
+     "size": "XXL",
+     "price": 1050
+    }
    ],
    "photos": [
     "img/179-0.jpg",
     "img/179-1.jpg",
     "img/179-2.jpg"
-   ]
+   ],
+   "article": "DEMO-179"
   },
   {
    "id": 180,
+   "brand": "Demo",
+   "category": "suits",
    "title": "Dress Pea",
-   "brand": "",
-   "category": "womens-dresses",
-   "description": "The Dress Pea is a stylish and comfortable dress with a pea pattern. Perfect for casual outings, it adds a playful and fun element to your wardrobe, making it a great choice for day-to-day wear.",
-   "price": 355,
-   "oldPrice": 431,
-   "rating": 4.88,
+   "gender": "women",
+   "price": 640,
+   "oldPrice": 765,
+   "expressExtra": 50,
    "sold": 2202,
    "sizes": [
-    "XS",
-    "S",
-    "M",
-    "L",
-    "XL",
-    "XXL"
+    {
+     "size": "XS",
+     "price": 640
+    },
+    {
+     "size": "S",
+     "price": 670
+    },
+    {
+     "size": "M",
+     "price": 705
+    },
+    {
+     "size": "L",
+     "price": 640
+    },
+    {
+     "size": "XL",
+     "price": 670
+    },
+    {
+     "size": "XXL",
+     "price": 705
+    }
    ],
    "photos": [
     "img/180-0.jpg",
     "img/180-1.jpg",
     "img/180-2.jpg"
-   ]
+   ],
+   "article": "DEMO-180"
   },
   {
    "id": 181,
+   "brand": "Demo",
+   "category": "suits",
    "title": "Marni Red & Black Suit",
-   "brand": "",
-   "category": "womens-dresses",
-   "description": "The Marni Red & Black Suit is a sophisticated and fashion-forward suit ensemble. With a combination of red and black tones, it showcases a modern design for a bold and confident look.",
-   "price": 1278,
-   "oldPrice": 1578,
-   "rating": 4.48,
+   "gender": "women",
+   "price": 2145,
+   "oldPrice": 2635,
+   "expressExtra": 50,
    "sold": 4285,
    "sizes": [
-    "XS",
-    "S",
-    "M",
-    "L",
-    "XL",
-    "XXL"
+    {
+     "size": "XS",
+     "price": 2145
+    },
+    {
+     "size": "S",
+     "price": 2175
+    },
+    {
+     "size": "M",
+     "price": 2210
+    },
+    {
+     "size": "L",
+     "price": 2145
+    },
+    {
+     "size": "XL",
+     "price": 2175
+    },
+    {
+     "size": "XXL",
+     "price": 2210
+    }
    ],
    "photos": [
     "img/181-0.jpg",
     "img/181-1.jpg",
     "img/181-2.jpg"
-   ]
-  },
-  {
-   "id": 172,
-   "title": "Blue Women's Handbag",
-   "brand": "Fashionista",
-   "category": "womens-bags",
-   "description": "The Blue Women's Handbag is a stylish and spacious accessory for everyday use. With a vibrant blue color and multiple compartments, it combines fashion and functionality.",
-   "price": 355,
-   "oldPrice": 432,
-   "rating": 2.92,
-   "sold": 4704,
-   "sizes": [],
-   "photos": [
-    "img/172-0.jpg",
-    "img/172-1.jpg",
-    "img/172-2.jpg"
-   ]
-  },
-  {
-   "id": 173,
-   "title": "Heshe Women's Leather Bag",
-   "brand": "Heshe",
-   "category": "womens-bags",
-   "description": "The Heshe Women's Leather Bag is a luxurious and high-quality leather bag for the sophisticated woman. With a timeless design and durable craftsmanship, it's a versatile accessory.",
-   "price": 923,
-   "oldPrice": null,
-   "rating": 4.92,
-   "sold": 5566,
-   "sizes": [],
-   "photos": [
-    "img/173-0.jpg",
-    "img/173-1.jpg",
-    "img/173-2.jpg"
-   ]
-  },
-  {
-   "id": 174,
-   "title": "Prada Women Bag",
-   "brand": "Prada",
-   "category": "womens-bags",
-   "description": "The Prada Women Bag is an iconic designer bag that exudes elegance and luxury. Crafted with precision and featuring the Prada logo, it's a statement piece for fashion enthusiasts.",
-   "price": 4260,
-   "oldPrice": 4959,
-   "rating": 2.71,
-   "sold": 4689,
-   "sizes": [],
-   "photos": [
-    "img/174-0.jpg",
-    "img/174-1.jpg",
-    "img/174-2.jpg"
-   ]
-  },
-  {
-   "id": 175,
-   "title": "White Faux Leather Backpack",
-   "brand": "Urban Chic",
-   "category": "womens-bags",
-   "description": "The White Faux Leather Backpack is a trendy and practical backpack for the modern woman. With a sleek white design and ample storage space, it's perfect for both casual and on-the-go styles.",
-   "price": 284,
-   "oldPrice": 335,
-   "rating": 3.36,
-   "sold": 3368,
-   "sizes": [],
-   "photos": [
-    "img/175-0.jpg",
-    "img/175-1.jpg",
-    "img/175-2.jpg"
-   ]
-  },
-  {
-   "id": 176,
-   "title": "Women Handbag Black",
-   "brand": "Elegance Collection",
-   "category": "womens-bags",
-   "description": "The Women Handbag in Black is a classic and versatile accessory that complements various outfits. With a timeless black color and functional design, it's a must-have in every woman's wardrobe.",
-   "price": 426,
-   "oldPrice": 482,
-   "rating": 2.89,
-   "sold": 2343,
-   "sizes": [],
-   "photos": [
-    "img/176-0.jpg",
-    "img/176-1.jpg",
-    "img/176-2.jpg"
-   ]
-  },
-  {
-   "id": 93,
-   "title": "Brown Leather Belt Watch",
-   "brand": "Fashion Timepieces",
-   "category": "mens-watches",
-   "description": "The Brown Leather Belt Watch is a stylish timepiece with a classic design. Featuring a genuine leather strap and a sleek dial, it adds a touch of sophistication to your look.",
-   "price": 639,
-   "oldPrice": 680,
-   "rating": 4.19,
-   "sold": 2207,
-   "sizes": [],
-   "photos": [
-    "img/93-0.jpg",
-    "img/93-1.jpg",
-    "img/93-2.jpg"
-   ]
-  },
-  {
-   "id": 94,
-   "title": "Longines Master Collection",
-   "brand": "Longines",
-   "category": "mens-watches",
-   "description": "The Longines Master Collection is an elegant and refined watch known for its precision and craftsmanship. With a timeless design, it's a symbol of luxury and sophistication.",
-   "price": 10650,
-   "oldPrice": 12869,
-   "rating": 3.87,
-   "sold": 4734,
-   "sizes": [],
-   "photos": [
-    "img/94-0.jpg",
-    "img/94-1.jpg",
-    "img/94-2.jpg"
-   ]
-  },
-  {
-   "id": 95,
-   "title": "Rolex Cellini Date Black Dial",
-   "brand": "Rolex",
-   "category": "mens-watches",
-   "description": "The Rolex Cellini Date with Black Dial is a classic and prestigious watch. With a black dial and date complication, it exudes sophistication and is a symbol of Rolex's heritage.",
-   "price": 63900,
-   "oldPrice": 70127,
-   "rating": 4.97,
-   "sold": 2525,
-   "sizes": [],
-   "photos": [
-    "img/95-0.jpg",
-    "img/95-1.jpg",
-    "img/95-2.jpg"
-   ]
-  },
-  {
-   "id": 96,
-   "title": "Rolex Cellini Moonphase",
-   "brand": "Rolex",
-   "category": "mens-watches",
-   "description": "The Rolex Cellini Moonphase is a masterpiece of horology, featuring a moon phase complication and exquisite design. It reflects Rolex's commitment to precision and elegance.",
-   "price": 92300,
-   "oldPrice": 111906,
-   "rating": 2.58,
-   "sold": 2388,
-   "sizes": [],
-   "photos": [
-    "img/96-0.jpg",
-    "img/96-1.jpg",
-    "img/96-2.jpg"
-   ]
-  },
-  {
-   "id": 97,
-   "title": "Rolex Datejust",
-   "brand": "Rolex",
-   "category": "mens-watches",
-   "description": "The Rolex Datejust is an iconic and versatile timepiece with a date window. Known for its timeless design and reliability, it's a symbol of Rolex's watchmaking excellence.",
-   "price": 78100,
-   "oldPrice": null,
-   "rating": 3.66,
-   "sold": 4249,
-   "sizes": [],
-   "photos": [
-    "img/97-0.jpg",
-    "img/97-1.jpg",
-    "img/97-2.jpg"
-   ]
-  },
-  {
-   "id": 98,
-   "title": "Rolex Submariner Watch",
-   "brand": "Rolex",
-   "category": "mens-watches",
-   "description": "The Rolex Submariner is a legendary dive watch with a rich history. Known for its durability and water resistance, it's a symbol of adventure and exploration.",
-   "price": 99400,
-   "oldPrice": 104687,
-   "rating": 2.69,
-   "sold": 3113,
-   "sizes": [],
-   "photos": [
-    "img/98-0.jpg",
-    "img/98-1.jpg",
-    "img/98-2.jpg"
-   ]
-  },
-  {
-   "id": 190,
-   "title": "IWC Ingenieur Automatic Steel",
-   "brand": "IWC",
-   "category": "womens-watches",
-   "description": "The IWC Ingenieur Automatic Steel watch is a durable and sophisticated timepiece. With a stainless steel case and automatic movement, it combines precision and style for watch enthusiasts.",
-   "price": 35500,
-   "oldPrice": 39205,
-   "rating": 2.93,
-   "sold": 5420,
-   "sizes": [],
-   "photos": [
-    "img/190-0.jpg",
-    "img/190-1.jpg",
-    "img/190-2.jpg"
-   ]
-  },
-  {
-   "id": 191,
-   "title": "Rolex Cellini Moonphase",
-   "brand": "Rolex",
-   "category": "womens-watches",
-   "description": "The Rolex Cellini Moonphase watch is a masterpiece of horology. Featuring a moon phase complication, it showcases the craftsmanship and elegance that Rolex is renowned for.",
-   "price": 113600,
-   "oldPrice": null,
-   "rating": 3.83,
-   "sold": 4025,
-   "sizes": [],
-   "photos": [
-    "img/191-0.jpg",
-    "img/191-1.jpg",
-    "img/191-2.jpg"
-   ]
-  },
-  {
-   "id": 192,
-   "title": "Rolex Datejust Women",
-   "brand": "Rolex",
-   "category": "womens-watches",
-   "description": "The Rolex Datejust Women's watch is an iconic timepiece designed for women. With a timeless design and a date complication, it offers both elegance and functionality.",
-   "price": 78100,
-   "oldPrice": 92910,
-   "rating": 2.86,
-   "sold": 2260,
-   "sizes": [],
-   "photos": [
-    "img/192-0.jpg",
-    "img/192-1.jpg",
-    "img/192-2.jpg"
-   ]
-  },
-  {
-   "id": 193,
-   "title": "Watch Gold for Women",
-   "brand": "Fashion Gold",
-   "category": "womens-watches",
-   "description": "The Gold Women's Watch is a stunning accessory that combines luxury and style. Featuring a gold-plated case and a chic design, it adds a touch of glamour to any outfit.",
-   "price": 5680,
-   "oldPrice": 6956,
-   "rating": 4.24,
-   "sold": 2123,
-   "sizes": [],
-   "photos": [
-    "img/193-0.jpg",
-    "img/193-1.jpg",
-    "img/193-2.jpg"
-   ]
-  },
-  {
-   "id": 194,
-   "title": "Women's Wrist Watch",
-   "brand": "Fashion Co.",
-   "category": "womens-watches",
-   "description": "The Women's Wrist Watch is a versatile and fashionable timepiece for everyday wear. With a comfortable strap and a simple yet elegant design, it complements various styles.",
-   "price": 923,
-   "oldPrice": 1056,
-   "rating": 3.52,
-   "sold": 2578,
-   "sizes": [],
-   "photos": [
-    "img/194-0.jpg",
-    "img/194-1.jpg",
-    "img/194-2.jpg"
-   ]
-  },
-  {
-   "id": 154,
-   "title": "Black Sun Glasses",
-   "brand": "Fashion Shades",
-   "category": "sunglasses",
-   "description": "The Black Sun Glasses are a classic and stylish choice, featuring a sleek black frame and tinted lenses. They provide both UV protection and a fashionable look.",
-   "price": 213,
-   "oldPrice": null,
-   "rating": 4.41,
-   "sold": 3914,
-   "sizes": [],
-   "photos": [
-    "img/154-0.jpg",
-    "img/154-1.jpg",
-    "img/154-2.jpg"
-   ]
-  },
-  {
-   "id": 155,
-   "title": "Classic Sun Glasses",
-   "brand": "Fashion Shades",
-   "category": "sunglasses",
-   "description": "The Classic Sun Glasses offer a timeless design with a neutral frame and UV-protected lenses. These sunglasses are versatile and suitable for various occasions.",
-   "price": 177,
-   "oldPrice": null,
-   "rating": 3.86,
-   "sold": 1742,
-   "sizes": [],
-   "photos": [
-    "img/155-0.jpg",
-    "img/155-1.jpg",
-    "img/155-2.jpg"
-   ]
-  },
-  {
-   "id": 156,
-   "title": "Green and Black Glasses",
-   "brand": "Fashion Shades",
-   "category": "sunglasses",
-   "description": "The Green and Black Glasses feature a bold combination of green and black colors, adding a touch of vibrancy to your eyewear collection. They are both stylish and eye-catching.",
-   "price": 248,
-   "oldPrice": null,
-   "rating": 4.55,
-   "sold": 2604,
-   "sizes": [],
-   "photos": [
-    "img/156-0.jpg",
-    "img/156-1.jpg",
-    "img/156-2.jpg"
-   ]
-  },
-  {
-   "id": 157,
-   "title": "Party Glasses",
-   "brand": "Fashion Fun",
-   "category": "sunglasses",
-   "description": "The Party Glasses are designed to add flair to your party outfit. With unique shapes or colorful frames, they're perfect for adding a playful touch to your look during celebrations.",
-   "price": 142,
-   "oldPrice": 160,
-   "rating": 2.79,
-   "sold": 4909,
-   "sizes": [],
-   "photos": [
-    "img/157-0.jpg",
-    "img/157-1.jpg",
-    "img/157-2.jpg"
-   ]
-  },
-  {
-   "id": 158,
-   "title": "Sunglasses",
-   "brand": "Fashion Shades",
-   "category": "sunglasses",
-   "description": "The Sunglasses offer a classic and simple design with a focus on functionality. These sunglasses provide essential UV protection while maintaining a timeless look.",
-   "price": 163,
-   "oldPrice": null,
-   "rating": 3.02,
-   "sold": 2737,
-   "sizes": [],
-   "photos": [
-    "img/158-0.jpg",
-    "img/158-1.jpg",
-    "img/158-2.jpg"
-   ]
-  },
-  {
-   "id": 182,
-   "title": "Green Crystal Earring",
-   "brand": "",
-   "category": "womens-jewellery",
-   "description": "The Green Crystal Earring is a dazzling accessory that features a vibrant green crystal. With a classic design, it adds a touch of elegance to your ensemble, perfect for formal or special occasions.",
-   "price": 213,
-   "oldPrice": 251,
-   "rating": 3.96,
-   "sold": 4000,
-   "sizes": [],
-   "photos": [
-    "img/182-0.jpg",
-    "img/182-1.jpg",
-    "img/182-2.jpg"
-   ]
-  },
-  {
-   "id": 183,
-   "title": "Green Oval Earring",
-   "brand": "",
-   "category": "womens-jewellery",
-   "description": "The Green Oval Earring is a stylish and versatile accessory with a unique oval shape. Whether for casual or dressy occasions, its green hue and contemporary design make it a standout piece.",
-   "price": 177,
-   "oldPrice": 209,
-   "rating": 3.57,
-   "sold": 4714,
-   "sizes": [],
-   "photos": [
-    "img/183-0.jpg",
-    "img/183-1.jpg",
-    "img/183-2.jpg"
-   ]
-  },
-  {
-   "id": 184,
-   "title": "Tropical Earring",
-   "brand": "",
-   "category": "womens-jewellery",
-   "description": "The Tropical Earring is a fun and playful accessory inspired by tropical elements. Featuring vibrant colors and a lively design, it's perfect for adding a touch of summer to your look.",
-   "price": 142,
-   "oldPrice": null,
-   "rating": 4.4,
-   "sold": 2061,
-   "sizes": [],
-   "photos": [
-    "img/184-0.jpg",
-    "img/184-1.jpg",
-    "img/184-2.jpg"
-   ]
-  },
-  {
-   "id": 6,
-   "title": "Calvin Klein CK One",
-   "brand": "Calvin Klein",
-   "category": "fragrances",
-   "description": "CK One by Calvin Klein is a classic unisex fragrance, known for its fresh and clean scent. It's a versatile fragrance suitable for everyday wear.",
-   "price": 355,
-   "oldPrice": null,
-   "rating": 4.37,
-   "sold": 1139,
-   "sizes": [],
-   "photos": [
-    "img/6-0.jpg",
-    "img/6-1.jpg",
-    "img/6-2.jpg"
-   ]
-  },
-  {
-   "id": 7,
-   "title": "Chanel Coco Noir Eau De",
-   "brand": "Chanel",
-   "category": "fragrances",
-   "description": "Coco Noir by Chanel is an elegant and mysterious fragrance, featuring notes of grapefruit, rose, and sandalwood. Perfect for evening occasions.",
-   "price": 923,
-   "oldPrice": 1106,
-   "rating": 4.26,
-   "sold": 2223,
-   "sizes": [],
-   "photos": [
-    "img/7-0.jpg",
-    "img/7-1.jpg",
-    "img/7-2.jpg"
-   ]
-  },
-  {
-   "id": 8,
-   "title": "Dior J'adore",
-   "brand": "Dior",
-   "category": "fragrances",
-   "description": "J'adore by Dior is a luxurious and floral fragrance, known for its blend of ylang-ylang, rose, and jasmine. It embodies femininity and sophistication.",
-   "price": 639,
-   "oldPrice": 749,
-   "rating": 3.8,
-   "sold": 3714,
-   "sizes": [],
-   "photos": [
-    "img/8-0.jpg",
-    "img/8-1.jpg",
-    "img/8-2.jpg"
-   ]
-  },
-  {
-   "id": 9,
-   "title": "Dolce Shine Eau de",
-   "brand": "Dolce & Gabbana",
-   "category": "fragrances",
-   "description": "Dolce Shine by Dolce & Gabbana is a vibrant and fruity fragrance, featuring notes of mango, jasmine, and blonde woods. It's a joyful and youthful scent.",
-   "price": 497,
-   "oldPrice": null,
-   "rating": 3.96,
-   "sold": 247,
-   "sizes": [],
-   "photos": [
-    "img/9-0.jpg",
-    "img/9-1.jpg",
-    "img/9-2.jpg"
-   ]
-  },
-  {
-   "id": 10,
-   "title": "Gucci Bloom Eau de",
-   "brand": "Gucci",
-   "category": "fragrances",
-   "description": "Gucci Bloom by Gucci is a floral and captivating fragrance, with notes of tuberose, jasmine, and Rangoon creeper. It's a modern and romantic scent.",
-   "price": 568,
-   "oldPrice": 663,
-   "rating": 2.74,
-   "sold": 3477,
-   "sizes": [],
-   "photos": [
-    "img/10-0.jpg",
-    "img/10-1.jpg",
-    "img/10-2.jpg"
-   ]
+   ],
+   "article": "DEMO-181"
   },
   {
    "id": 137,
+   "brand": "Demo",
+   "category": "training",
    "title": "American Football",
-   "brand": "",
-   "category": "sports-accessories",
-   "description": "The American Football is a classic ball used in American football games. It is designed for throwing and catching, making it an essential piece of equipment for the sport.",
-   "price": 142,
+   "gender": "unisex",
+   "price": 305,
    "oldPrice": null,
-   "rating": 4.91,
+   "expressExtra": 60,
    "sold": 3468,
    "sizes": [],
    "photos": [
     "img/137-0.jpg"
-   ]
+   ],
+   "article": "DEMO-137"
   },
   {
    "id": 138,
+   "brand": "Demo",
+   "category": "training",
    "title": "Baseball Ball",
-   "brand": "",
-   "category": "sports-accessories",
-   "description": "The Baseball Ball is a standard baseball used in baseball games. It features a durable leather cover and is designed for pitching, hitting, and fielding in the game of baseball.",
-   "price": 64,
+   "gender": "unisex",
+   "price": 175,
    "oldPrice": null,
-   "rating": 2.57,
+   "expressExtra": 60,
    "sold": 5218,
    "sizes": [],
    "photos": [
     "img/138-0.jpg"
-   ]
+   ],
+   "article": "DEMO-138"
   },
   {
    "id": 139,
+   "brand": "Demo",
+   "category": "training",
    "title": "Baseball Glove",
-   "brand": "",
-   "category": "sports-accessories",
-   "description": "The Baseball Glove is a protective glove worn by baseball players. It is designed to catch and field the baseball, providing players with comfort and control during the game.",
-   "price": 177,
+   "gender": "unisex",
+   "price": 360,
    "oldPrice": null,
-   "rating": 3.96,
+   "expressExtra": 60,
    "sold": 2343,
    "sizes": [],
    "photos": [
     "img/139-0.jpg",
     "img/139-1.jpg",
     "img/139-2.jpg"
-   ]
+   ],
+   "article": "DEMO-139"
   },
   {
    "id": 140,
+   "brand": "Demo",
+   "category": "training",
    "title": "Basketball",
-   "brand": "",
-   "category": "sports-accessories",
-   "description": "The Basketball is a standard ball used in basketball games. It is designed for dribbling, shooting, and passing in the game of basketball, suitable for both indoor and outdoor play.",
-   "price": 106,
-   "oldPrice": 115,
-   "rating": 4.66,
+   "gender": "unisex",
+   "price": 245,
+   "oldPrice": 260,
+   "expressExtra": 60,
    "sold": 4315,
    "sizes": [],
    "photos": [
     "img/140-0.jpg"
-   ]
+   ],
+   "article": "DEMO-140"
   },
   {
    "id": 141,
+   "brand": "Demo",
+   "category": "training",
    "title": "Basketball Rim",
-   "brand": "",
-   "category": "sports-accessories",
-   "description": "The Basketball Rim is a sturdy hoop and net assembly mounted on a basketball backboard. It provides a target for shooting and scoring in the game of basketball.",
-   "price": 284,
-   "oldPrice": 308,
-   "rating": 4.6,
+   "gender": "unisex",
+   "price": 535,
+   "oldPrice": 575,
+   "expressExtra": 60,
    "sold": 3142,
    "sizes": [],
    "photos": [
     "img/141-0.jpg"
-   ]
+   ],
+   "article": "DEMO-141"
   },
   {
    "id": 142,
+   "brand": "Demo",
+   "category": "training",
    "title": "Cricket Ball",
-   "brand": "",
-   "category": "sports-accessories",
-   "description": "The Cricket Ball is a hard leather ball used in the sport of cricket. It is bowled and batted in the game, and its hardness and seam contribute to the dynamics of cricket play.",
-   "price": 92,
-   "oldPrice": 101,
-   "rating": 3.53,
+   "gender": "unisex",
+   "price": 220,
+   "oldPrice": 235,
+   "expressExtra": 60,
    "sold": 2672,
    "sizes": [],
    "photos": [
     "img/142-0.jpg"
-   ]
+   ],
+   "article": "DEMO-142"
   },
   {
    "id": 143,
+   "brand": "Demo",
+   "category": "training",
    "title": "Cricket Bat",
-   "brand": "",
-   "category": "sports-accessories",
-   "description": "The Cricket Bat is an essential piece of cricket equipment used by batsmen to hit the cricket ball. It is made of wood and comes in various sizes and designs.",
-   "price": 213,
+   "gender": "unisex",
+   "price": 420,
    "oldPrice": null,
-   "rating": 3.17,
+   "expressExtra": 60,
    "sold": 5199,
    "sizes": [],
    "photos": [
     "img/143-0.jpg"
-   ]
+   ],
+   "article": "DEMO-143"
   },
   {
    "id": 144,
+   "brand": "Demo",
+   "category": "training",
    "title": "Cricket Helmet",
-   "brand": "",
-   "category": "sports-accessories",
-   "description": "The Cricket Helmet is a protective headgear worn by cricket players, especially batsmen and wicketkeepers. It provides protection against fast bowling and bouncers.",
-   "price": 319,
-   "oldPrice": 353,
-   "rating": 4.69,
+   "gender": "unisex",
+   "price": 590,
+   "oldPrice": 645,
+   "expressExtra": 60,
    "sold": 1954,
    "sizes": [],
    "photos": [
     "img/144-0.jpg",
     "img/144-1.jpg",
     "img/144-2.jpg"
-   ]
+   ],
+   "article": "DEMO-144"
   },
   {
    "id": 145,
+   "brand": "Demo",
+   "category": "training",
    "title": "Cricket Wicket",
-   "brand": "",
-   "category": "sports-accessories",
-   "description": "The Cricket Wicket is a set of three stumps and two bails, forming a wicket used in the sport of cricket. Batsmen aim to protect the wicket while scoring runs.",
-   "price": 213,
-   "oldPrice": 256,
-   "rating": 4.73,
+   "gender": "unisex",
+   "price": 420,
+   "oldPrice": 490,
+   "expressExtra": 60,
    "sold": 2520,
    "sizes": [],
    "photos": [
     "img/145-0.jpg"
-   ]
+   ],
+   "article": "DEMO-145"
   },
   {
    "id": 146,
+   "brand": "Demo",
+   "category": "training",
    "title": "Feather Shuttlecock",
-   "brand": "",
-   "category": "sports-accessories",
-   "description": "The Feather Shuttlecock is used in the sport of badminton. It features natural feathers and is designed for high-speed play, providing stability and accuracy during matches.",
-   "price": 43,
+   "gender": "unisex",
+   "price": 140,
    "oldPrice": null,
-   "rating": 2.85,
+   "expressExtra": 60,
    "sold": 5121,
    "sizes": [],
    "photos": [
     "img/146-0.jpg"
-   ]
+   ],
+   "article": "DEMO-146"
   },
   {
    "id": 147,
+   "brand": "Demo",
+   "category": "training",
    "title": "Football",
-   "brand": "",
-   "category": "sports-accessories",
-   "description": "The Football, also known as a soccer ball, is the standard ball used in the sport of football (soccer). It is designed for kicking and passing in the game.",
-   "price": 128,
-   "oldPrice": 135,
-   "rating": 3.28,
+   "gender": "unisex",
+   "price": 280,
+   "oldPrice": null,
+   "expressExtra": 60,
    "sold": 5169,
    "sizes": [],
    "photos": [
     "img/147-0.jpg"
-   ]
+   ],
+   "article": "DEMO-147"
   },
   {
    "id": 148,
+   "brand": "Demo",
+   "category": "training",
    "title": "Golf Ball",
-   "brand": "",
-   "category": "sports-accessories",
-   "description": "The Golf Ball is a small ball used in the sport of golf. It features dimples on its surface, providing aerodynamic lift and distance when struck by a golf club.",
-   "price": 71,
-   "oldPrice": 86,
-   "rating": 4.3,
+   "gender": "unisex",
+   "price": 185,
+   "oldPrice": 210,
+   "expressExtra": 60,
    "sold": 4736,
    "sizes": [],
    "photos": [
     "img/148-0.jpg"
-   ]
+   ],
+   "article": "DEMO-148"
   },
   {
    "id": 149,
+   "brand": "Demo",
+   "category": "training",
    "title": "Iron Golf",
-   "brand": "",
-   "category": "sports-accessories",
-   "description": "The Iron Golf is a type of golf club designed for various golf shots. It features a solid metal head and is used for approach shots, chipping, and other golfing techniques.",
-   "price": 355,
-   "oldPrice": 380,
-   "rating": 4.41,
+   "gender": "unisex",
+   "price": 650,
+   "oldPrice": 690,
+   "expressExtra": 60,
    "sold": 4969,
    "sizes": [],
    "photos": [
     "img/149-0.jpg"
-   ]
+   ],
+   "article": "DEMO-149"
   },
   {
    "id": 150,
+   "brand": "Demo",
+   "category": "training",
    "title": "Metal Baseball Bat",
-   "brand": "",
-   "category": "sports-accessories",
-   "description": "The Metal Baseball Bat is a durable and lightweight baseball bat made from metal alloys. It is commonly used in baseball games for hitting and batting practice.",
-   "price": 213,
-   "oldPrice": 265,
-   "rating": 4.66,
+   "gender": "unisex",
+   "price": 420,
+   "oldPrice": 505,
+   "expressExtra": 60,
    "sold": 2242,
    "sizes": [],
    "photos": [
     "img/150-0.jpg"
-   ]
+   ],
+   "article": "DEMO-150"
   },
   {
    "id": 151,
+   "brand": "Demo",
+   "category": "training",
    "title": "Tennis Ball",
-   "brand": "",
-   "category": "sports-accessories",
-   "description": "The Tennis Ball is a standard ball used in the sport of tennis. It is designed for bouncing and hitting with tennis rackets during matches or practice sessions.",
-   "price": 50,
-   "oldPrice": 57,
-   "rating": 4.06,
+   "gender": "unisex",
+   "price": 155,
+   "oldPrice": 165,
+   "expressExtra": 60,
    "sold": 2697,
    "sizes": [],
    "photos": [
     "img/151-0.jpg"
-   ]
+   ],
+   "article": "DEMO-151"
   },
   {
    "id": 152,
+   "brand": "Demo",
+   "category": "training",
    "title": "Tennis Racket",
-   "brand": "",
-   "category": "sports-accessories",
-   "description": "The Tennis Racket is an essential piece of equipment used in the sport of tennis. It features a frame with strings and a grip, allowing players to hit the tennis ball.",
-   "price": 355,
-   "oldPrice": 442,
-   "rating": 4.03,
+   "gender": "unisex",
+   "price": 650,
+   "oldPrice": 790,
+   "expressExtra": 60,
    "sold": 1894,
    "sizes": [],
    "photos": [
     "img/152-0.jpg"
-   ]
+   ],
+   "article": "DEMO-152"
   },
   {
    "id": 153,
+   "brand": "Demo",
+   "category": "training",
    "title": "Volleyball",
-   "brand": "",
-   "category": "sports-accessories",
-   "description": "The Volleyball is a standard ball used in the sport of volleyball. It is designed for passing, setting, and spiking over the net during volleyball matches.",
-   "price": 85,
-   "oldPrice": 97,
-   "rating": 3.84,
+   "gender": "unisex",
+   "price": 210,
+   "oldPrice": 230,
+   "expressExtra": 60,
    "sold": 1683,
    "sizes": [],
    "photos": [
     "img/153-0.jpg"
-   ]
+   ],
+   "article": "DEMO-153"
+  },
+  {
+   "id": 10001,
+   "brand": "Nike",
+   "category": "running",
+   "title": "Nike REVOLUTION 8 时尚舒适 网布织物透气减震 低帮 休闲跑步鞋 男款 黑白",
+   "gender": "men",
+   "price": 445,
+   "oldPrice": null,
+   "expressExtra": 60,
+   "sold": 17000,
+   "sizes": [
+    {
+     "size": "38.5",
+     "price": 720
+    },
+    {
+     "size": "39",
+     "price": 610
+    },
+    {
+     "size": "40",
+     "price": 500
+    },
+    {
+     "size": "40.5",
+     "price": 445
+    },
+    {
+     "size": "41",
+     "price": 465
+    },
+    {
+     "size": "42",
+     "price": 465
+    },
+    {
+     "size": "42.5",
+     "price": 455
+    },
+    {
+     "size": "43",
+     "price": 485
+    },
+    {
+     "size": "44",
+     "price": 470
+    },
+    {
+     "size": "44.5",
+     "price": 610
+    },
+    {
+     "size": "45",
+     "price": 525
+    },
+    {
+     "size": "45.5",
+     "price": 730
+    },
+    {
+     "size": "46",
+     "price": 555
+    },
+    {
+     "size": "47",
+     "price": 790
+    },
+    {
+     "size": "47.5",
+     "price": 720
+    },
+    {
+     "size": "48.5",
+     "price": 845
+    },
+    {
+     "size": "49.5",
+     "price": 1050
+    }
+   ],
+   "photos": [
+    "img/nike/10001-0.jpg",
+    "img/nike/10001-1.jpg",
+    "img/nike/10001-2.jpg"
+   ],
+   "article": ""
+  },
+  {
+   "id": 10002,
+   "brand": "Nike",
+   "category": "running",
+   "title": "Nike REVOLUTION 7 舒适百搭 织物透气 低帮 休闲跑步鞋 男款 黑色",
+   "gender": "men",
+   "price": 485,
+   "oldPrice": null,
+   "expressExtra": 60,
+   "sold": 13000,
+   "sizes": [
+    {
+     "size": "38.5",
+     "price": 650
+    },
+    {
+     "size": "39",
+     "price": 570
+    },
+    {
+     "size": "40",
+     "price": 550
+    },
+    {
+     "size": "40.5",
+     "price": 515
+    },
+    {
+     "size": "41",
+     "price": 565
+    },
+    {
+     "size": "42",
+     "price": 530
+    },
+    {
+     "size": "42.5",
+     "price": 485
+    },
+    {
+     "size": "43",
+     "price": 495
+    },
+    {
+     "size": "44",
+     "price": 490
+    },
+    {
+     "size": "44.5",
+     "price": 490
+    },
+    {
+     "size": "45",
+     "price": 525
+    },
+    {
+     "size": "45.5",
+     "price": 585
+    },
+    {
+     "size": "46",
+     "price": 565
+    },
+    {
+     "size": "47.5",
+     "price": 630
+    },
+    {
+     "size": "48.5",
+     "price": 1050
+    },
+    {
+     "size": "49.5",
+     "price": 1120
+    }
+   ],
+   "photos": [
+    "img/nike/10002-0.jpg",
+    "img/nike/10002-1.jpg",
+    "img/nike/10002-2.jpg"
+   ],
+   "article": ""
+  },
+  {
+   "id": 10003,
+   "brand": "Nike",
+   "category": "running",
+   "title": "Nike V2K Run 复古百搭透气 低帮 休闲跑步鞋 男款 银灰色",
+   "gender": "men",
+   "price": 590,
+   "oldPrice": 1455,
+   "expressExtra": 60,
+   "sold": 11000,
+   "sizes": [
+    {
+     "size": "38.5",
+     "price": 960
+    },
+    {
+     "size": "39",
+     "price": 620
+    },
+    {
+     "size": "40",
+     "price": 610
+    },
+    {
+     "size": "40.5",
+     "price": 610
+    },
+    {
+     "size": "41",
+     "price": 590
+    },
+    {
+     "size": "42",
+     "price": 625
+    },
+    {
+     "size": "42.5",
+     "price": 625
+    },
+    {
+     "size": "43",
+     "price": 695
+    },
+    {
+     "size": "44",
+     "price": 700
+    },
+    {
+     "size": "44.5",
+     "price": 750
+    },
+    {
+     "size": "45",
+     "price": 880
+    },
+    {
+     "size": "45.5",
+     "price": 1045
+    },
+    {
+     "size": "46",
+     "price": 1265
+    },
+    {
+     "size": "47",
+     "price": 1240
+    },
+    {
+     "size": "47.5",
+     "price": 935
+    },
+    {
+     "size": "48.5",
+     "price": 1265
+    },
+    {
+     "size": "49.5",
+     "price": 1265
+    }
+   ],
+   "photos": [
+    "img/nike/10003-0.jpg",
+    "img/nike/10003-1.jpg",
+    "img/nike/10003-2.jpg"
+   ],
+   "article": ""
+  },
+  {
+   "id": 10004,
+   "brand": "Nike",
+   "category": "running",
+   "title": "Nike REVOLUTION 8 舒适百搭透气 低帮 休闲跑步鞋 男款 黑色",
+   "gender": "men",
+   "price": 505,
+   "oldPrice": null,
+   "expressExtra": 60,
+   "sold": 10000,
+   "sizes": [
+    {
+     "size": "38",
+     "price": 975
+    },
+    {
+     "size": "38.5",
+     "price": 755
+    },
+    {
+     "size": "39",
+     "price": 695
+    },
+    {
+     "size": "40",
+     "price": 585
+    },
+    {
+     "size": "40.5",
+     "price": 505
+    },
+    {
+     "size": "41",
+     "price": 515
+    },
+    {
+     "size": "42",
+     "price": 550
+    },
+    {
+     "size": "42.5",
+     "price": 520
+    },
+    {
+     "size": "43",
+     "price": 595
+    },
+    {
+     "size": "44",
+     "price": 535
+    },
+    {
+     "size": "44.5",
+     "price": 595
+    },
+    {
+     "size": "45",
+     "price": 655
+    },
+    {
+     "size": "45.5",
+     "price": 720
+    },
+    {
+     "size": "46",
+     "price": 675
+    },
+    {
+     "size": "47",
+     "price": 700
+    },
+    {
+     "size": "47.5",
+     "price": 810
+    },
+    {
+     "size": "48.5",
+     "price": 810
+    },
+    {
+     "size": "49.5",
+     "price": 720
+    }
+   ],
+   "photos": [
+    "img/nike/10004-1.jpg",
+    "img/nike/10004-0.jpg",
+    "img/nike/10004-2.jpg"
+   ],
+   "article": ""
+  },
+  {
+   "id": 10005,
+   "brand": "Nike",
+   "category": "running",
+   "title": "Nike Rival Fly 4 舒适百搭透气回弹 训练跑步鞋 男款 绿色",
+   "gender": "men",
+   "price": 670,
+   "oldPrice": 1210,
+   "expressExtra": 60,
+   "sold": 10000,
+   "sizes": [
+    {
+     "size": "36",
+     "price": 840
+    },
+    {
+     "size": "37.5",
+     "price": 805
+    },
+    {
+     "size": "38.5",
+     "price": 700
+    },
+    {
+     "size": "39",
+     "price": 720
+    },
+    {
+     "size": "40",
+     "price": 710
+    },
+    {
+     "size": "40.5",
+     "price": 670
+    },
+    {
+     "size": "41",
+     "price": 695
+    },
+    {
+     "size": "42",
+     "price": 690
+    },
+    {
+     "size": "42.5",
+     "price": 755
+    },
+    {
+     "size": "43",
+     "price": 745
+    },
+    {
+     "size": "44",
+     "price": 700
+    },
+    {
+     "size": "44.5",
+     "price": 805
+    },
+    {
+     "size": "45",
+     "price": 860
+    },
+    {
+     "size": "45.5",
+     "price": 875
+    },
+    {
+     "size": "46",
+     "price": 710
+    },
+    {
+     "size": "47.5",
+     "price": 1360
+    }
+   ],
+   "photos": [
+    "img/nike/10005-1.jpg",
+    "img/nike/10005-0.jpg",
+    "img/nike/10005-2.jpg"
+   ],
+   "article": ""
+  },
+  {
+   "id": 10006,
+   "brand": "Nike",
+   "category": "running",
+   "title": "Nike V2K Run 时尚亮色舒适 织物合成革透气轻便 低帮 休闲城市通勤跑步鞋 女款 白银",
+   "gender": "women",
+   "price": 685,
+   "oldPrice": null,
+   "expressExtra": 60,
+   "sold": 8000,
+   "sizes": [
+    {
+     "size": "35.5",
+     "price": 700
+    },
+    {
+     "size": "36",
+     "price": 700
+    },
+    {
+     "size": "36.5",
+     "price": 705
+    },
+    {
+     "size": "37.5",
+     "price": 745
+    },
+    {
+     "size": "38",
+     "price": 730
+    },
+    {
+     "size": "38.5",
+     "price": 705
+    },
+    {
+     "size": "39",
+     "price": 685
+    },
+    {
+     "size": "40",
+     "price": 685
+    },
+    {
+     "size": "40.5",
+     "price": 720
+    },
+    {
+     "size": "41",
+     "price": 755
+    },
+    {
+     "size": "42",
+     "price": 745
+    },
+    {
+     "size": "42.5",
+     "price": 750
+    },
+    {
+     "size": "43",
+     "price": 790
+    },
+    {
+     "size": "44",
+     "price": 740
+    },
+    {
+     "size": "44.5",
+     "price": 800
+    },
+    {
+     "size": "45",
+     "price": 755
+    },
+    {
+     "size": "45.5",
+     "price": 1000
+    },
+    {
+     "size": "46",
+     "price": 960
+    },
+    {
+     "size": "47",
+     "price": 1265
+    },
+    {
+     "size": "47.5",
+     "price": 1305
+    },
+    {
+     "size": "48.5",
+     "price": 1305
+    },
+    {
+     "size": "50",
+     "price": 1305
+    }
+   ],
+   "photos": [
+    "img/nike/10006-0.jpg",
+    "img/nike/10006-1.jpg",
+    "img/nike/10006-2.jpg"
+   ],
+   "article": ""
   }
  ]
 }
