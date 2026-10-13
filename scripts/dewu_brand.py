@@ -7,7 +7,8 @@
 из панели «立即购买» (панель только открывается и закрывается, покупка не нажимается).
 
 Прогресс сохраняется после каждого товара: повторный запуск продолжает с того же места.
-Usage: dewu_brand.py <brand> [товаров на категорию] [сколько запросов, для проверки]"""
+Usage: dewu_brand.py <brand> [товаров на категорию] [сколько запросов, для проверки]
+       dewu_brand.py --fix-photos <brand>   переснять фото, где нет снимка на белом фоне"""
 import base64
 import io
 import json
@@ -42,6 +43,7 @@ TASKS = [
 SKIP = re.compile(r'童|婴|定制|\bPS\b|\bTD\b|鞋带|袜')
 PRICE = re.compile(r'^¥[\d ]+$')
 PHOTOS = 3
+POST_IDS = ('tvBottomReply', 'imageIndex', 'tvInteract')   # страница поста сообщества
 SAMSUNG_IME = 'com.samsung.android.honeyboard/.service.HoneyBoardService'
 
 
@@ -111,7 +113,7 @@ class Shop:
                 return
             if any(n[0] == '分类' for n in ns) and any(n[0] == '推荐' for n in ns):
                 raise dewu.Retry('оказался на главной')
-            if any(n[1] in ('bottomButtonViews', 'buyButtonContainer', 'buyButton', 'ivOBClose') for n in ns):
+            if any(n[1] in ('bottomButtonViews', 'buyButtonContainer', 'buyButton', 'ivOBClose') + POST_IDS for n in ns):
                 dewu.back()
             time.sleep(2.5)
         raise dewu.Retry('не вернулся к выдаче поиска')
@@ -137,6 +139,11 @@ class Shop:
             if any(n[1] in ('buyButton', 'buyButtonContainer', 'bottomButtonViews') for n in ns) \
                     and any(PRICE.match(n[0]) for n in ns):
                 break
+            if any(n[1] in POST_IDS for n in ns):   # в выдаче попадаются посты сообщества
+                dewu.log('  это пост, а не товар:', card_title[:40])
+                dewu.back()
+                time.sleep(2.5)
+                return None
             time.sleep(2)
         else:
             raise dewu.Retry('не открылась карточка товара')
@@ -170,8 +177,18 @@ class Shop:
                 return int(m.group(1)), int(m.group(2)), n[2][1]
         return None
 
+    def product_tab(self):
+        """У части карточек галерея открывается на вкладке звёзд или видео: переключиться на «商品»."""
+        if self.gallery_label():
+            return
+        tab = [n for n in dewu.nodes() if n[0] == '商品' and 850 < n[2][1] < 1150]
+        if tab:
+            dewu.tap_node(tab[0][2])
+            time.sleep(2)
+
     def photos(self, pid):
         """Фото 2..4 галереи (первое часто видео или фото на модели); если фото одно - оно."""
+        self.product_tab()
         label = self.gallery_label()
         total = label[1] if label else 1
         saved = []
@@ -261,6 +278,38 @@ class Shop:
             dewu.pause(2, 5)
 
 
+def fix_photos(shop):
+    """Переснять фото у товаров, где нет ни одного снимка на белом фоне: найти поиском по названию и открыть."""
+    sys.path.insert(0, str(ROOT / 'scripts'))
+    from build_catalog import whiteness
+    bad = [p for p in shop.items if max(whiteness(ROOT / 'public' / f) for f in p['photos']) < 0.9]
+    dewu.log(f'товаров без фото на белом фоне: {len(bad)}')
+    for p in bad:
+        try:
+            shop.search(p['listTitle'][:24])
+            for _ in range(3):
+                hit = [c for c in shop.cards(dewu.nodes()) if c[0] == p['listTitle']]
+                if hit:
+                    break
+                dewu.scroll(y1=1750, y2=1050, ms=900)
+                time.sleep(2.5)
+            if not hit:
+                dewu.log('  не нашёл:', p['listTitle'][:40])
+                continue
+            dewu.tap(*hit[0][2], jitter=10)
+            time.sleep(5)
+            for f in p['photos']:
+                (ROOT / 'public' / f).unlink(missing_ok=True)
+            p['photos'] = shop.photos(p['id'])
+            shop.save()
+            w = [round(whiteness(ROOT / 'public' / f), 2) for f in p['photos']]
+            dewu.log(f'  {p["id"]}: {w} {p["titleCn"][:40]}')
+            shop.back_to_results()
+            dewu.pause(2, 4)
+        except dewu.Retry as e:
+            dewu.log('  повтор не удался:', e)
+
+
 def parse_sold(s):
     m = re.match(r'([\d.]+)(万)?', s or '')
     if not m:
@@ -273,6 +322,9 @@ def screencap():
 
 
 def main():
+    if sys.argv[1] == '--fix-photos':
+        fix_photos(Shop(sys.argv[2], 0))
+        return
     brand = sys.argv[1]
     per_task = int(sys.argv[2]) if sys.argv[2:] else 15
     shop = Shop(brand, per_task)

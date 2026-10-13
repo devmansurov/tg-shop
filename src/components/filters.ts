@@ -82,13 +82,13 @@ export function apply(f: Filters): Product[] {
   return found.sort(cmp[f.sort]);
 }
 
-const LETTERS = ['XXS', 'XS', 'S', 'M', 'L', 'XL', 'XXL', '2XL', '3XL', '4XL', '5XL'];
+// Dewu mixes both spellings: XXL = 2XL, XXXL = 3XL, XXXXL = 4XL
+const LETTERS = ['XXS', 'XS', 'S', 'M', 'L', 'XL', 'XXL', '2XL', 'XXXL', '3XL', 'XXXXL', '4XL', '5XL'];
 
 /** Shoe sizes numerically, clothes by the letter scale. */
 export function sortSizes(sizes: string[]): string[] {
   const rank = (s: string) => {
-    const n = parseFloat(s);
-    if (!Number.isNaN(n)) return n;
+    if (/^\d+(\.\d+)?$/.test(s)) return parseFloat(s);
     const i = LETTERS.indexOf(s.toUpperCase());
     return i < 0 ? 1000 : 500 + i;
   };
