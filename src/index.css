@@ -4,7 +4,7 @@
   --text: var(--tg-theme-text-color, #14151a);
   --hint: var(--tg-theme-hint-color, #8a8d96);
   --accent: #01c2c3;
-  --photo-bg: #f5f5f7;
+  --photo-bg: #ffffff;   /* Dewu photos are shot on white */
   --line: rgba(127, 127, 127, .16);
   --red: #ff4d4f;
 }
