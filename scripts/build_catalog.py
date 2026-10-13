@@ -79,7 +79,7 @@ def main():
             if p['id'] in seen or p['category'] not in weight_of or not cats_leaf(cats, p['category']):
                 continue
             # без снимка товара на белом фоне карточка выглядит как чужой пост: такие не показываем
-            if p['photos'] and max(whiteness(ROOT / 'public' / f) for f in p['photos']) < 0.5:
+            if not p['photos'] or max(whiteness(ROOT / 'public' / f) for f in p['photos']) < 0.5:
                 no_photo.append(p['id'])
                 continue
             seen.add(p['id'])

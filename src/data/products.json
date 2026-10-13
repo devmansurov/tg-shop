@@ -6089,6 +6089,49 @@
    "article": ""
   },
   {
+   "id": 10079,
+   "brand": "Nike",
+   "category": "hoodies",
+   "title": "Nike Sportswear Club — свитшот, круглый ворот, мужской, серый",
+   "gender": "men",
+   "price": 355,
+   "oldPrice": null,
+   "expressExtra": 30,
+   "sold": 2000,
+   "sizes": [
+    {
+     "size": "S",
+     "price": 590
+    },
+    {
+     "size": "M",
+     "price": 435
+    },
+    {
+     "size": "L",
+     "price": 420
+    },
+    {
+     "size": "XL",
+     "price": 365
+    },
+    {
+     "size": "XXL",
+     "price": 355
+    },
+    {
+     "size": "XXXL",
+     "price": 590
+    }
+   ],
+   "photos": [
+    "img/nike/10079-0.jpg",
+    "img/nike/10079-1.jpg",
+    "img/nike/10079-2.jpg"
+   ],
+   "article": ""
+  },
+  {
    "id": 10080,
    "brand": "Nike",
    "category": "hoodies",
@@ -6126,6 +6169,47 @@
    ],
    "photos": [
     "img/nike/10080-0.jpg"
+   ],
+   "article": ""
+  },
+  {
+   "id": 10081,
+   "brand": "Nike",
+   "category": "hoodies",
+   "title": "Nike Sportswear Club Fleece — худи на молнии, флис, вышитый логотип, мужское, чёрное",
+   "gender": "men",
+   "price": 555,
+   "oldPrice": null,
+   "expressExtra": 30,
+   "sold": 1000,
+   "sizes": [
+    {
+     "size": "S",
+     "price": 645
+    },
+    {
+     "size": "M",
+     "price": 570
+    },
+    {
+     "size": "L",
+     "price": 595
+    },
+    {
+     "size": "XL",
+     "price": 555
+    },
+    {
+     "size": "2XL",
+     "price": 565
+    },
+    {
+     "size": "3XL",
+     "price": 980
+    }
+   ],
+   "photos": [
+    "img/nike/10081-0.jpg"
    ],
    "article": ""
   },
@@ -9310,6 +9394,47 @@
    "article": ""
   },
   {
+   "id": 10156,
+   "brand": "Nike",
+   "category": "shorts",
+   "title": "Nike Pro Dri-FIT — тренировочные шорты, облегающие, быстросохнущие, мужские, чёрные",
+   "gender": "men",
+   "price": 240,
+   "oldPrice": null,
+   "expressExtra": 15,
+   "sold": 3000,
+   "sizes": [
+    {
+     "size": "S",
+     "price": 255
+    },
+    {
+     "size": "M",
+     "price": 260
+    },
+    {
+     "size": "L",
+     "price": 285
+    },
+    {
+     "size": "XL",
+     "price": 240
+    },
+    {
+     "size": "XXL",
+     "price": 240
+    },
+    {
+     "size": "XXXL",
+     "price": 470
+    }
+   ],
+   "photos": [
+    "img/nike/10156-0.jpg"
+   ],
+   "article": ""
+  },
+  {
    "id": 10157,
    "brand": "Nike",
    "category": "shorts",
@@ -9550,6 +9675,47 @@
    "article": ""
   },
   {
+   "id": 10163,
+   "brand": "Nike",
+   "category": "shorts",
+   "title": "Nike Club — спортивные шорты, шнурок, однотонные, мужские",
+   "gender": "men",
+   "price": 245,
+   "oldPrice": null,
+   "expressExtra": 15,
+   "sold": 1000,
+   "sizes": [
+    {
+     "size": "XS",
+     "price": 305
+    },
+    {
+     "size": "S",
+     "price": 255
+    },
+    {
+     "size": "M",
+     "price": 245
+    },
+    {
+     "size": "L",
+     "price": 275
+    },
+    {
+     "size": "XL",
+     "price": 330
+    },
+    {
+     "size": "XXL",
+     "price": 375
+    }
+   ],
+   "photos": [
+    "img/nike/10163-0.jpg"
+   ],
+   "article": ""
+  },
+  {
    "id": 10164,
    "brand": "Nike",
    "category": "shorts",
@@ -9672,6 +9838,47 @@
    ],
    "photos": [
     "img/nike/10166-0.jpg"
+   ],
+   "article": ""
+  },
+  {
+   "id": 10167,
+   "brand": "Nike",
+   "category": "shorts",
+   "title": "Nike Dri-FIT Challenger — шорты, высокая посадка, мужские",
+   "gender": "men",
+   "price": 210,
+   "oldPrice": null,
+   "expressExtra": 15,
+   "sold": 946,
+   "sizes": [
+    {
+     "size": "S",
+     "price": 210
+    },
+    {
+     "size": "M",
+     "price": 295
+    },
+    {
+     "size": "L",
+     "price": 330
+    },
+    {
+     "size": "XL",
+     "price": 320
+    },
+    {
+     "size": "XXL",
+     "price": 300
+    },
+    {
+     "size": "XXXL",
+     "price": 435
+    }
+   ],
+   "photos": [
+    "img/nike/10167-0.jpg"
    ],
    "article": ""
   }
