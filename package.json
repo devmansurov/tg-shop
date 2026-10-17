@@ -5,14 +5,13 @@
   "type": "module",
   "homepage": "https://devmansurov.github.io/tg-shop",
   "scripts": {
-    "deploy": "gh-pages -d dist --dotfiles",
+    "deploy": "node -e \"console.error('Витрина выкладывается из dm-market: make miniapp-deploy. Отсюда — нельзя: выложилась бы старая витрина.'); process.exit(1)\"",
     "dev": "vite",
     "dev:https": "cross-env HTTPS=true vite",
     "build": "tsc --noEmit && vite build",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "lint:fix": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0 --fix",
-    "preview": "vite preview",
-    "predeploy": "npm run build"
+    "preview": "vite preview"
   },
   "dependencies": {
     "@tma.js/sdk-react": "^3.0.8",

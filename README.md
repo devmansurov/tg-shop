@@ -1,27 +1,9 @@
-# tg-shop — магазин в Telegram Mini App
+# tg-shop — адрес витрины dm-market в Telegram
 
-Каталог товаров и корзина в стиле Poizon. Оплаты и доставки пока нет.
-Основа — официальный шаблон [Telegram-Mini-Apps/reactjs-template](https://github.com/Telegram-Mini-Apps/reactjs-template)
-(React, TypeScript, Vite, `@tma.js/sdk-react`).
+Исходники мини-приложения переехали в монорепозиторий **dm-market** (`miniapp/`) вместе с историей своих файлов — там они и развиваются.
 
-- Бот: [@dm_market_shop_bot](https://t.me/dm_market_shop_bot), кнопка «Магазин» в меню
-- Приложение: https://devmansurov.github.io/tg-shop/
+Этот репозиторий остаётся адресом витрины: GitHub Pages отдаёт ветку `gh-pages` по ссылке https://devmansurov.github.io/tg-shop/, её открывает бот [@dm_market_shop_bot](https://t.me/dm_market_shop_bot) кнопкой «Магазин».
 
-## Как устроено
-
-- `src/data/products.json` — каталог (сейчас демо-товары с dummyjson.com), фото в `public/img/`.
-  Обновить: `python3 scripts/fetch_products.py`.
-- `src/store/cart.tsx` — корзина; в Telegram хранится в CloudStorage (общая для всех устройств пользователя).
-- `src/hooks/useMainButton.tsx` — нативная нижняя кнопка Telegram; в браузере вместо неё обычная кнопка.
-- Страницы: каталог `/`, товар `/product/:id`, корзина `/cart` (HashRouter).
-
-## Команды
-
-```bash
-npm install
-npm run dev        # http://localhost:5173/tg-shop/ — окружение Telegram подменяется заглушкой
-npm run deploy     # сборка и публикация на GitHub Pages (ветка gh-pages)
-```
-
-`scripts/bot_setup.py` — создание бота через BotFather и привязка кнопки меню.
-Секреты в `.env.bot` (токен бота) и `.env.tg` (Telegram API владельца) — в git не попадают.
+- Выкладывает витрину dm-market: `make miniapp-deploy` — один коммит в `gh-pages` поверх прежнего, откат — отменить его.
+- Каталог витрина читает из публичного репозитория [dm-market-data](https://github.com/devmansurov/dm-market-data): его публикует ядро dm-market.
+- Код в `main` — старая витрина со вшитым каталогом; он больше не меняется. `npm run deploy` здесь отключён: он выложил бы старую витрину поверх новой. Сборщик каталога `scripts/build_catalog.py` убран — каталог теперь собирает ядро.
